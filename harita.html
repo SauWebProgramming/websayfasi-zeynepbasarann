@@ -2,6 +2,28 @@
 <html>
     <head>
         <style>
+            ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
             body{
                 background-color:cadetblue;
             }
@@ -10,6 +32,11 @@
     </head>
     <center><body>
         <h1 style="border: 3px; color: rgb(7, 58, 59) ;">HARİTA</h1>
+        <ul class="breadcrumb">
+            <li><a href="ANA SAYFA.html">ANA SAYFA</a></li>
+            <li><a href="fotoğraflar.html">FOTOĞRAFLAR</a></li>
+            <li>HARİTA</li>
+</ul>
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HER69uLuUbiGlWtH9BkFYeXYpqhyiBNx&ehbc=2E312F" width="640" height="480"></iframe>
 </body></center>
 </html>
